@@ -35,10 +35,10 @@ class ApplicationController < Sinatra::Base
     redirect '/sessions/login'
   end
 
-  get '/sessions/logout' do 
-    session.clear
-    redirect '/'
-  end
+  get '/sessions/logout' do
+     session.clear
+    redirect '/'	    redirect '/'
+  end	  end
 
   get '/users/home' do
     @user = User.find(session[:id])
