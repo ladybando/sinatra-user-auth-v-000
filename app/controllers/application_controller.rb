@@ -40,6 +40,6 @@ class ApplicationController < Sinatra::Base
     redirect '/'
   end
 
-
+ get '/users/home' do
 
 end
